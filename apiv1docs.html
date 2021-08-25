@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/apidocs.css') }}">
+
+    </head>
+    <body>
+        /api/v1/uploadentry || methods = ['POST'], fill post request with **json** data that is {"data": "yourdatahere", "entryname": "yourentrynamehere"}
+        <br>
+        it can also have entryname first and data second it doesnt matter in what order you put the data in you just must have those two things filled.
+        <br>
+        returns the output of the upload as a string not JSON
+        <br>
+        /api/v1/entry/entryname || get request ending the url with the name of the entry, returns the entrys value as a string not JSON.
+        <br>
+</body>
